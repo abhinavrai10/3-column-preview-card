@@ -120,11 +120,11 @@ body {
     background-color: var(--Very-dark-cyan);
 }
 
-@media (max-width:580px) {
+/* @media (max-width:580px) {
     .card {
         min-height: 20px;
     }
-}
+} */
 
 @media (max-width:750px) {
     .container {
