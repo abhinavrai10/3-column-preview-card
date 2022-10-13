@@ -64,7 +64,8 @@ body {
     line-height: 1.8;
 
 }
-.btn{
+
+.btn {
     height: 2rem;
     margin-top: 3rem;
 }
@@ -73,62 +74,75 @@ body {
     width: max-content;
     padding: .6rem 1.3rem;
     border-radius: 1.5rem;
-    border: none;  
+    border: none;
     font-size: .7rem;
     cursor: pointer;
 }
-.card button:active{
+
+.card button:active {
     border: 1px solid white;
     color: white;
 }
 
-.sedans{
-   background-color: var(--Bright-orange);
-}
-.sedans button{
-    color: var(--Bright-orange);
-}
-.sedans button:active{
+.sedans {
     background-color: var(--Bright-orange);
 }
-.suv{
+
+.sedans button {
+    color: var(--Bright-orange);
+}
+
+.sedans button:active {
+    background-color: var(--Bright-orange);
+}
+
+.suv {
     background-color: var(--Dark-cyan);
 }
-.suv button{
+
+.suv button {
     color: var(--Dark-cyan);
 }
-.suv button:active{
+
+.suv button:active {
     background-color: var(--Dark-cyan);
 }
-.luxury{
-    background-color: var(--Very-dark-cyan);
-}
-.luxury button{
-    color: var(--Very-dark-cyan);
-}
-.luxury button:active{
+
+.luxury {
     background-color: var(--Very-dark-cyan);
 }
 
-@media (max-width:580px){
-    .card{
+.luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+.luxury button:active {
+    background-color: var(--Very-dark-cyan);
+}
+
+@media (max-width:580px) {
+    .card {
         min-height: 20px;
     }
 }
 
-@media (max-width:750px){
-    .container{
-       grid-template-columns: 1fr;
-       max-width: 30%;
+@media (max-width:750px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 30%;
     }
-    .card button{
+
+    .btn {
         margin-top: 0;
     }
-    .card{
-        min-height: 15rem;;
+
+    .card {
+        min-height: 15rem;
+        ;
         padding: 2rem 1.5rem;
     }
-    .card h1{
+
+    .card h1 {
         font-size: 1.8rem;
     }
 }
