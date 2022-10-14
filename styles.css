@@ -21,7 +21,7 @@ html {
     --Transparent-white: hsla(0, 0%, 100%, 0.75);
     /*-paragraphs*/
     --Very-light-gray: hsl(0, 0%, 95%);
-    /*(background, headings, buttons)*/
+    /*(background, headings, as)*/
 }
 
 body {
@@ -53,7 +53,7 @@ body {
     height: 2rem;
 }
 
-.card h1 {
+.card h2 {
     font-family: var(--big-font-family);
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -70,29 +70,36 @@ body {
     margin-top: 3rem;
 }
 
-.card button {
-    width: max-content;
-    padding: .6rem 1.3rem;
+.card a {
+    width: 3rem;
+    padding: .6rem 2rem .6rem 1.5rem;
     border-radius: 1.5rem;
     border: none;
     font-size: .7rem;
     cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    text-align: left;
 }
 
-.card button:active {
+.card a:active {
     border: 1px solid white;
     color: white;
 }
 
 .sedans {
     background-color: var(--Bright-orange);
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
 }
 
-.sedans button {
+.sedans a {
     color: var(--Bright-orange);
 }
 
-.sedans button:active {
+.sedans a:active {
     background-color: var(--Bright-orange);
 }
 
@@ -100,23 +107,25 @@ body {
     background-color: var(--Dark-cyan);
 }
 
-.suv button {
+.suv a {
     color: var(--Dark-cyan);
 }
 
-.suv button:active {
+.suv a:active {
     background-color: var(--Dark-cyan);
 }
 
 .luxury {
     background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: .3rem;
+    border-top-right-radius: .3rem;
 }
 
-.luxury button {
+.luxury a {
     color: var(--Very-dark-cyan);
 }
 
-.luxury button:active {
+.luxury a:active {
     background-color: var(--Very-dark-cyan);
 }
 
@@ -134,8 +143,19 @@ body {
         min-height: 15rem;
         padding: 2rem 1.5rem;
     }
+    .card p{
+        line-height: 1.5;
+    }
 
-    .card h1 {
+    .card h2 {
         font-size: 1.8rem;
+    }
+    .sedans{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .3rem;
+    }
+    .luxury {
+        border-bottom-left-radius: .3rem;
+        border-top-right-radius: 0;
     }
 }
